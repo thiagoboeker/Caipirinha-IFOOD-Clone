@@ -43,7 +43,9 @@ This callback is based on handle_info of the GenServer which is called when you 
     end
 ```
 This example at _lib/event_store/system/server_ shows basically it. First I fetched the id of the business client which have the socket pid's then I can easily send a message from the Server to the client.
-####CRUD
+
+#### CRUD
+
 I'm very against the RESTify!(read it like is a spellcast in Harry Potter), so to abstract the CRUD stuff I wrote a very simple macro.
 _lib/event_store/system/response.ex_
 ```elixir
@@ -65,7 +67,9 @@ Pretty simple, and to use it goes like this.
         fields: [:business_id, :user_id, :id, :inserted_at, :updated_at],
         module: Http)
 ```
-####Dipatcher
+
+#### Dipatcher
+
 Elixir modularity is really amazing in my opinion, and one thing I really enjoyed is the dispatch thing. You can put your routes in one module with very clear logic to where things are going. I'm currently working with PHP and is really a pain to find files with routes that I didnt even knew existed
 ```elixir
   defmodule EventStore.System.Dispatcher do
