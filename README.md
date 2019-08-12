@@ -30,7 +30,7 @@ First I have to say that work with WebSockets in Cowboy felt pretty good, the Ge
         {:reply, {:text, demand}, state}
     end
 ```
-This callback is based on handle_info of the GenServer which is called when you send an ordinary message to the process using his PID. So every socket has a PID and this means that with this PID you can send a message trough the socket wherever on your system. This is very nice and abstracts and feels very natural
+This callback is based on handle_info of the GenServer which is called when you send an ordinary message to the process using his PID. So every socket has a PID and this means that with this PID you can send a message trough the socket wherever on your system. This is very nice and feels very natural
 ```elixir
     defp server_generate_demand(close, state) do
         demand = Orders.new_demand(close) |> Repo.insert()
