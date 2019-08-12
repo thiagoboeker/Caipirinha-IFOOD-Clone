@@ -1,7 +1,5 @@
 # Caipirinha
 
-**TODO: Add description**
-
 ## Summary
 
 This is a very honest attempt to showcase my knowledge on Elixir, I've studying Elixir for a few months now and I'm getting very confortable with it.
@@ -85,7 +83,7 @@ Elixir modularity is really amazing in my opinion, and one thing I really enjoye
 ```
 ## Wrap up
 This is a imcomplete project, these are the things that I'm going to add next.
-- [] Payment
-- [] User socket
-- [] A beautiful UI with VueJS
+- [ ] Payment
+- [ ] User socket
+- [ ] A beautiful UI with VueJS
 
